@@ -1,4 +1,4 @@
-# polytech.cs.2017.spring_project
+# Gonki_project
 Гонки- аркадная двухмерная игра. Она имеет вид сверху.
 
 
@@ -25,7 +25,7 @@ make clean
 ````
 
 ## Authors
-Климентова Ирина - xxx@spbstu.ru
+Климентова Ирина - ira23121998.ru
 Архипова Екатерина - arkat98@mail.ru
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
