@@ -1,26 +1,30 @@
 #include "includes.h"
 #include "functions.h"
-
+/*!
+@file gonki.c
+@author Irina
+\brief This is main class which contains main function where all gamaplay happens
+*/
 int main(){
-	int const gorizontal_disp = 800;
-	int const vertical_disp = 600;
-	int user_status = 2;
-	int FPS = 60;
-	int left_border = 50;
-	int rigth_border = 450;
-	int cener_line = 250;
-	int change_dir_to_right = 0;
-	int change_dir_to_left = 0;
-	int coordinates_player_x = 90;
-	int coordinates_player_y = 400;
-	int enemies[3][3] = {{0,0,0},{0,0,0},{0,0,0}};
-	int rest_time = 0;
-	int enemies_spawn = 0;
-	int timer_of_enemy_go = 0;
-	int index_enemy = 0;
-	int score = 0;
-	int stage = 1;
-	float speed = 0;
+	int const gorizontal_disp = 800;//!< ширина экрана
+	int const vertical_disp = 600;//!< высота экрана
+	int user_status = 2;//!< если переменная 0-выйти из игры, если 1-войти в игру, если 2-меню
+	int FPS = 60;//!< частота обновления кадров
+	int left_border = 50;//!< отрисовка линий
+	int rigth_border = 450;//!< отрисовка линий
+	int cener_line = 250;//!< отрисовка линий
+	int change_dir_to_right = 0;//!<  двигать котика вправо
+	int change_dir_to_left = 0;//!<  двигать котика влево
+	int coordinates_player_x = 90;//!< максимально левое положение игрока
+	int coordinates_player_y = 400;//!< максимальное правое положение игрока
+	int enemies[3][3] = {{0,0,0},{0,0,0},{0,0,0}};//!< массив врагов; первый элемент - наличие врага, второй - его координаты, третий - дорога
+	int rest_time = 0;//!< время задержки перед выходом врагов
+	int enemies_spawn = 0;//!< переменная, которая говорит нужно ли выпускаь врагов
+	int timer_of_enemy_go = 0;//!< время между выходом врагов
+	int index_enemy = 0;//!< номер врага, которого нужно выпускать
+	int score = 0;//!< очки
+	int stage = 1;//!< уровень
+	float speed = 0;//!< скорость игры
    
 
 
@@ -49,7 +53,7 @@ int main(){
 	ALLEGRO_BITMAP *cat_enemy = NULL;
 	ALLEGRO_BITMAP *cat_enemy2 = NULL;
 
-
+ 
 
 
 	display = al_create_display(gorizontal_disp, vertical_disp);
@@ -110,8 +114,6 @@ int main(){
 	   			al_draw_line(rigth_border, 0, rigth_border, vertical_disp, al_map_rgb(255,255,255),4);
 	   			al_draw_line(cener_line-4, 0, cener_line-4, vertical_disp, al_map_rgb(255,255,255),1);
 	   			al_draw_line(cener_line+4, 0, cener_line+4, vertical_disp, al_map_rgb(255,255,255),1);
-	   			// al_draw_filled_rectangle(coordinates_player_x, coordinates_player_y , 
-	   			// 	coordinates_player_x + 120, coordinates_player_y+ 170, al_map_rgb(255,162,0));
 	   			al_draw_bitmap(cat,coordinates_player_x , coordinates_player_y, 0);	
 			 					
 
