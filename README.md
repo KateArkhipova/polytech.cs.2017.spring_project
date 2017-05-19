@@ -1,10 +1,9 @@
 # polytech.cs.2017.spring_project
-Проект Гонки
+Гонки- аркадная двухмерная игра. Она имеет вид сверху.
 
 
 ## Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
+Эта игра написана на #С с использованием библиотеки Allegro.
 ### Directory structure
 The source code is organized as follows:
 
@@ -26,7 +25,7 @@ make clean
 ````
 
 ## Authors
-* **Name Surname** - xxx@spbstu.ru
-
+Климентова Ирина - xxx@spbstu.ru
+Архипова Екатерина - arkat98@mail.ru
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
