@@ -25,7 +25,7 @@ make clean
 ````
 
 ## Authors
-Климентова Ирина - ira23121998.ru
+Климентова Ирина - ira23121998@mail.ru
 Архипова Екатерина - arkat98@mail.ru
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
