@@ -1,35 +1,35 @@
-# Gonki_project
-Гонки- аркадная двухмерная игра (вид сверху)
-![Image alt](https://github.com/KateArkhipova/polytech.cs.2017.spring_project/raw/master/doc/unicorn.png)
+# Информация о проекте.
+Гонки- аркадная двухмерная игра (вид сверху). Данная игра ставит перед игроком заработать как можно больше очков и пройти как можно больше уровней.
 
-## Getting Started
-Эта игра написана на #С с использованием библиотеки Allegro.
-### Directory structure
-The source code is organized as follows:
+## Описание интерфейса
+Интерфейс игры состоит из меню и игрового поля- двухполостной дороги. С помощью главного меню пользователь осуществляет управление программой. Во время игры отображается возможность выхода в меню. С помощью стрелок клавиатуры пользователь контролирует положение котика на двухполостной дороге, на экране ведется счет уровней и очков. Главная задача игрока не допускать столкновения с вражскими котиками другого цвета. Во время смены уровня единорог поворачивается в противоположенную сторону.
+Главное меню ![Image alt](https://github.com/KateArkhipova/polytech.cs.2017.spring_project/raw/master/doc/play_window.png)
+Игровое поле ![Image alt](https://github.com/KateArkhipova/polytech.cs.2017.spring_project/raw/master/doc/unicorn.png)
+Котик, управляемый игроком ![Image alt](https://github.com/KateArkhipova/polytech.cs.2017.spring_project/raw/master/doc/cat.png)
+Вражеские котики ![Image alt](https://github.com/KateArkhipova/polytech.cs.2017.spring_project/raw/master/doc/enemy_cat.png)
+![Image alt](https://github.com/KateArkhipova/polytech.cs.2017.spring_project/raw/master/doc/enemy_cat2.png)
+### Структура директория
+Код организован следующим образом:
 
 Subdirectory | Description
 -------------|-------------------
-src/         | source files 
-src/tests    | unit tests 
-doc/         | documentation 
-res/         | static resources
+src/         | программные файлы 
+src/tests    | тесты
+doc/         | документация 
+res/         | ресурсы проекта
 
-### Build
-To build the project, do the following:
+### Сборка проекта
+Для сборки проекта:
 ````
 make
 ````
-To rebuild everything from scratch, do the following:
+Удаление собранных файлов:
 ````
 make clean
 ````
 Для сборки документации:
 ````
 make doxygen
-````
-Для сборки документации в формате PDF:
-````
-make pdf
 ````
 Для сборки документации в формате HTML:
 ````
@@ -39,4 +39,5 @@ make html
 Климентова Ирина - ira23121998@mail.ru
 Архипова Екатерина - arkat98@mail.ru
 ## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
+Этот проект лицензирован под MIT License - смотри LICENSE файл для подробностей
