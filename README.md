@@ -23,6 +23,17 @@ To rebuild everything from scratch, do the following:
 ````
 make clean
 ````
+Для сборки документации:
+````
+make doxygen
+
+Для сборки документации в формате PDF:
+````
+make pdf
+
+Для сборки документации в формате HTML:
+````
+make html
 
 ## Authors
 Климентова Ирина - ira23121998@mail.ru
