@@ -3,9 +3,9 @@
 
 ## Описание интерфейса
 Интерфейс игры состоит из меню и игрового поля- двухполостной дороги. С помощью главного меню пользователь осуществляет управление программой. Во время игры отображается возможность выхода в меню. С помощью стрелок клавиатуры пользователь контролирует положение котика на двухполостной дороге, на экране ведется счет уровней и очков. Главная задача игрока не допускать столкновения с вражескими котиками другого цвета. Во время смены уровня единорог поворачивается в противоположенную сторону.
-#Главное меню:
+# Главное меню:
 ![Image alt](https://github.com/KateArkhipova/polytech.cs.2017.spring_project/raw/master/doc/play_window.png)
-#Игровое поле: 
+# Игровое поле: 
 ![Image alt](https://github.com/KateArkhipova/polytech.cs.2017.spring_project/raw/master/doc/unicorn.png)
 Котик, управляемый игроком ![Image alt](https://github.com/KateArkhipova/polytech.cs.2017.spring_project/raw/master/doc/cat.png)
 Вражеские котики ![Image alt](https://github.com/KateArkhipova/polytech.cs.2017.spring_project/raw/master/doc/enemy_cat.png)
