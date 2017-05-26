@@ -2,17 +2,14 @@ SHELL = /bin/sh
 
 PROJECT := gonki
 
-<<<<<<< HEAD
 LIBS :=  -lallegro -lallegro_image -lallegro_ttf -lallegro_font -lallegro_primitives
-=======
+
 # ------------------
 # External programs
 # ------------------
 CC  := gcc
 RM  := rm -rf
 DG  := doxygen
->>>>>>> 2809a59791b7bd92d302249aa8195a5ca4944331
-
 
 # —----------------
 # External programs 
@@ -22,7 +19,6 @@ RM := rm -rf
 
 # —------------------
 # Directories & Files
-<<<<<<< HEAD
 # —------------------
 D_SRC := ./src
 D_TEST := $(D_SRC)/tests
@@ -41,8 +37,6 @@ LFLAGS :=
 # —----------
 # Targets
 # —----------
-
-=======
 # --------------------
 D_SRC    := ./src
 D_DOC    := ./doc
@@ -58,7 +52,7 @@ LFLAGS  :=
 # ------------
 # Targets
 # ------------
->>>>>>> 2809a59791b7bd92d302249aa8195a5ca4944331
+
 default: $(PROJECT)
 
 %.o: %.c
@@ -67,15 +61,13 @@ default: $(PROJECT)
 $(PROJECT): $(FILES_O)
 	$(CC) -I $(D_SRC) $(LFLAGS) $(FILES_O) -o $@ $(LIBS)
 
-<<<<<<< HEAD
 test: $(TEST_FILES_O)
 	$(CC) -I $(D_SRC) $(LFLAGS) $(TEST_FILES_O) -o $@ $(LIBS)
 
-.phony: clean
-clean:
+.phony: clean1
+clean1:
 	-$(RM) $(FILES_O) $(TEST_FILES_O) $(PROJECT) test
 
-=======
 .phony: doxygen
 doxygen:
 	$(DG) $(D_DOC)/doxygen.config
@@ -90,4 +82,4 @@ pdf: doxygen
 .phony:	clean
 clean:
 	-$(RM) $(FILES_O) $(PROJECT) $(D_DOC)/output
->>>>>>> 2809a59791b7bd92d302249aa8195a5ca4944331
+
