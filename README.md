@@ -1,6 +1,6 @@
 # Gonki_project
 Гонки- аркадная двухмерная игра (вид сверху)
-![alt text](C:/тсеремония/прога/unicorn.jpeg)
+![Image alt](https://github.com/KateArkhipova/polytech.cs.2017.spring_project/raw/master/doc/unicorn.png)
 
 ## Getting Started
 Эта игра написана на #С с использованием библиотеки Allegro.
