@@ -75,10 +75,6 @@ doxygen:
 .phony: html
 html: doxygen
 
-.phony: pdf
-pdf: doxygen
-	make -C $(D_DOC)/output/latex
-
 .phony:	clean
 clean:
 	-$(RM) $(FILES_O) $(PROJECT) $(D_DOC)/output
