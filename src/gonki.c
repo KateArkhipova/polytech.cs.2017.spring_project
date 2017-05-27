@@ -1,12 +1,12 @@
 #include "includes.h"
-#define MASS (3)//кориков сказал писать в массиве вместо цифр константы, определенне через диффаин
+#define MASS (3)//кориков сказал писать в мaссиве вместо цифр константы, определенне через диффаин
  /**
 \mainpage Gonki
 # Gonki_project
 Гонки- аркадная двухмерная игра. Она имеет вид сверху.
 
 ## Getting Started
-Эта игра написана на #С с использованием библиотеки Allegro.
+Эта игра написана на #С с использовaнием библиотеки Allegro.
 
 ### Directory structure
 The source code is organized as follows:
@@ -26,7 +26,7 @@ res/     | static resources
 *@author Klimentova Irina - ira23121998@mail.ru \n
     *@author Arkhipova Ekaterina - arkat98@mail.ru
  \fn int main()
-##Игровой цикл можно разделить на 3 части:
+##Игровой цикл можно рaзделить на 3 части:
 ###Первая часть:
 ** *Объявление переменных и отрисовка объектов*
 ###Вторая часть:
@@ -83,10 +83,7 @@ int main(){
 		return -1;
 	}
 
-	if(!al_init_font_addon()) {//подключение шрифтов
-		fprintf(stderr, "failed to initialize allegro font_addon!\n");
-		return -1;
-	}
+	al_init_font_addon();
 
 	ALLEGRO_DISPLAY *display = NULL;//создали дисплей с помощью указателя и сказали что он равен нулю
 	ALLEGRO_FONT *font = NULL;//создали шрифт
